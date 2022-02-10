@@ -1,9 +1,10 @@
 
-print("Witam pedale, chcesz rozpocząć quiz? (20 pytań) \n a)tak \n b)nie ")
-print("-------------------------------------------------")
-playing = input()
+
 
 def QuizGame():
+    print("Witam pedale, chcesz rozpocząć quiz? (20 pytań) \n a)tak \n b)nie ")
+    print("-------------------------------------------------")
+    playing = input()
     if playing != "a":
         print("Zła odpowiedź, jesteś dupsonem")
         print("-------------------------------------------------")
