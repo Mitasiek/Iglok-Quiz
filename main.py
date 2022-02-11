@@ -1,84 +1,89 @@
-points = 0
 
+points = (0)
+addPoints = (points + 1)
+lines = ("-------------------------------------------------")
 
 def QuizGame():
 
+
+
     print("Witam pedale, chcesz rozpocząć quiz? (20 pytań) \n a)tak \n b)nie ")
-    print("-------------------------------------------------")
+    print(lines)
     playing = input()
     if playing != "a":
         print("Zła odpowiedź, jesteś dupsonem")
-        print("-------------------------------------------------")
+        print(lines)
         quit()
 #Pytanie numer 1
     question = "1. Kto zazwyczaj jest ostatni w tabeli? \n a) Adolf \n b) Biogozon \n c) Cinuszek \n d) Dupson "
-    print("-------------------------------------------------")
+    print(lines)
     print(question)
-    print("-------------------------------------------------")
+    print(lines)
     answer = input().capitalize()
     if answer != "D":
         print("Niepoprawna odpowiedź, beka z ciebie")
-        print("-------------------------------------------------")
-        quit
+        print(lines)
+        quit()
     if answer == "D":
-        points + 1
+        points == (addPoints)
 #Pytanie numer 2
     question1 = "2. Jaka postać jest najniższa? \n a) Jett \n b) Neon \n c) Reyna \n d) Baluszek"
-    print("-------------------------------------------------")
+    print(lines)
     print(question1)
-    print("-------------------------------------------------")
+    print(lines)
     answer1 = input().capitalize()
     if answer1 != "B":
-        print("-------------------------------------------------")
+        print(lines)
         print("No chyba nie")
-        print("-------------------------------------------------")
+        print(lines)
         quit()
     if answer1 == "B":
-        points + 1
+        points == (addPoints)
 #Pytanie numer 3
     question2 = "3. Jakie była jedna z pierwszych map? Odpowiedź otwarta"
-    print("-------------------------------------------------")
+    print(lines)
     print(question2)
-    print("-------------------------------------------------")
+    print(lines)
     answer2 = input().capitalize()
     #Błędna odpowiedź
     if answer2 != ("Split"):
         if answer2 != ("Bind"):
             if answer2 != ("Haven"):
                 print("Siur odpowiedź")
-                print("-------------------------------------------------")
+                print(lines)
                 quit()
     #Prawidłowa odpowiedź
     if answer2 == ("Split"):
         if answer2 == ("Bind"):
             if answer2 == ("Haven"):
-                points + 1
+                points == (addPoints)
 #Pytanie numer 4
-    question3 = "4. Która postać jest z Rosji? a) Jett \n b) Yoru \n c) Sova \n d) OmkoTV "
+    print(lines)
+    question3 = "4. Która postać jest z Rosji? \n a) Jett \n b) Yoru \n c) Sova \n d) OmkoTV "
     print(question3)
-    print("-------------------------------------------------")
+    print(lines)
     answer3 = input().capitalize()
     if answer3 != ("C"):
         if answer3 != "D":
             print("Chyba nie zjesz dzisiaj bigosu...")
-            print("-------------------------------------------------")
+            print(lines)
             quit()
-    if answer == "C":
-        points + 1
+    if answer3 == "C":
+        points == (addPoints)
 
 #Pytanie numer 5
+    print(lines)
     question4 = "5. Jaka mapa znajduje się we Włoszech? Odpowiedź otwarta. "
     print(question4)
-    print("-------------------------------------------------")
+    print(lines)
     answer4 = input().capitalize()
     if answer4 != ("Ascent"):
         print("No chyba nie")
         quit()
     if answer4 == ("Ascent"):
-        points + 1
-    
+        points == (addPoints)
 
-print(points)
+    print("twoja liczba punktów to: ", points)
         
 QuizGame()
 
