@@ -81,5 +81,5 @@ def QuizGame():
         points += 1
 
     print("twoja liczba punktów to: ", int(points), ", czyli jest to:", int(points ) /questions * 100, "% całości wyniku")
-#test
+#test2
 QuizGame()
