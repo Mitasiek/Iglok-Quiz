@@ -52,7 +52,7 @@ def QuizGame():
             print("Chyba nie zjesz dzisiaj bigosu...")
             print("-------------------------------------------------")
             quit()
-
+#test
 QuizGame()
 
 
