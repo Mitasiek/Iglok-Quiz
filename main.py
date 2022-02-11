@@ -1,12 +1,10 @@
 
-points = (0)
-addPoints = (points + 1)
+
 lines = ("-------------------------------------------------")
 
 def QuizGame():
-
-
-
+    points = 0
+    questions = 20
     print("Witam pedale, chcesz rozpocząć quiz? (20 pytań) \n a)tak \n b)nie ")
     print(lines)
     playing = input()
@@ -25,7 +23,7 @@ def QuizGame():
         print(lines)
         quit()
     if answer == "D":
-        points == (addPoints)
+        points += 1
 #Pytanie numer 2
     question1 = "2. Jaka postać jest najniższa? \n a) Jett \n b) Neon \n c) Reyna \n d) Baluszek"
     print(lines)
@@ -38,7 +36,7 @@ def QuizGame():
         print(lines)
         quit()
     if answer1 == "B":
-        points == (addPoints)
+        points += 1
 #Pytanie numer 3
     question2 = "3. Jakie była jedna z pierwszych map? Odpowiedź otwarta"
     print(lines)
@@ -56,7 +54,7 @@ def QuizGame():
     if answer2 == ("Split"):
         if answer2 == ("Bind"):
             if answer2 == ("Haven"):
-                points == (addPoints)
+                points += 1
 #Pytanie numer 4
     print(lines)
     question3 = "4. Która postać jest z Rosji? \n a) Jett \n b) Yoru \n c) Sova \n d) OmkoTV "
@@ -69,7 +67,7 @@ def QuizGame():
             print(lines)
             quit()
     if answer3 == "C":
-        points == (addPoints)
+        points += 1
 
 #Pytanie numer 5
     print(lines)
@@ -81,9 +79,9 @@ def QuizGame():
         print("No chyba nie")
         quit()
     if answer4 == ("Ascent"):
-        points == (addPoints)
+        points += 1
 
-    print("twoja liczba punktów to: ", points)
+    print("twoja liczba punktów to: ", int(points), ", czyli jest to:", int(points)/questions * 100, "% całości wyniku")
         
 QuizGame()
 
